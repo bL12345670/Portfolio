@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessy's Portfolio</title>
+    <link rel="stylesheet" href="styleLamoste.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="background-animation">
+        <div style="left: 20%; animation-duration: 12s; animation-delay: 0s;"></div>
+        <div style="left: 50%; animation-duration: 15s; animation-delay: 2s;"></div>
+        <div style="left: 80%; animation-duration: 8s; animation-delay: 4s;"></div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="header">
+                <div class="glowing-image" id="home">
+                    <img src="c:\Users\bless lamoste\OneDrive\Pictures\d4.jpg" alt="Blessy's Photo" class="image" />
+                </div>
+                <div class="moving-label">
+                    <span>Hello! I'm <b>Blessy</b></span><br>
+                    <span>BS Information Technology Student</span><br>
+                    <span>BISU BALILIHAN CAMPUS</span>
+                </div>
+            </div>
+
+            <div class="short-description">
+                <p>
+                    I am a passionate student of Information Technology, eager to explore new technologies and solve real-world problems. My journey in tech is driven by curiosity, creativity, and a desire to learn. <br><br>
+                    <em>"The best way to predict the future is to create it." – Peter Drucker</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-me">
+        <h2>Who Am I?</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fas fa-user"></i>
+                <h3>Meet Blessy</h3>
+                <p>
+                    I am a student of Information Technology with a passion for crafting user-friendly designs, coding, and solving problems. I specialize in web design, app development, and all things digital.
+                </p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>What I Do</h3>
+                <p>
+                    I design visually stunning graphics, develop intuitive apps, and build responsive websites. Every project I take on reflects my creativity and attention to detail.
+                </p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-bullseye"></i>
+                <h3>My Goal</h3>
+                <p>
+                    To innovate and inspire! I aim to create impactful digital solutions that improve user experiences and connect people with technology seamlessly.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <h1><br><br><br><br><br>Welcome to my portfolio! Here are some of my projects.</h1>
+    </header>
+
+    <section class="projects" id="projects">
+        <div class="project-card" onclick="showDetails('ANDROID STUDIO PROJECTS')">
+            <img src="c:\Users\bless lamoste\OneDrive\Pictures\figma photos\TRUE ICON APP.png" alt="Project 1" class="project-image">
+            <h2>BADMINTON SCORE KEEPER APP</h2>
+            <p>
+                A simple tool to track and manage badminton scores effortlessly. Download now for a seamless experience!
+            </p>
+            <a href="c:\Users\bless lamoste\OneDrive\Desktop\badmintonscorekeeper.apk" download class="download-link">Download Project Files</a>
+        </div>
+
+        <div class="project-card" onclick="showDetails('GRAPHIC DESIGN PROJECTS')">
+            <img src="c:\Users\bless lamoste\OneDrive\Pictures\LAMOSTE_WEEK 2.jpg" alt="Project 2" class="project-image">
+            <h2>Graphic Design</h2>
+            <p>
+                My graphic design projects involve creating logos, branding, and digital illustrations using tools like Adobe Photoshop and Illustrator.
+            </p>
+        </div>
+
+        <div class="project-card" onclick="showDetails('HTML, CSS, and JAVASCRIPT PROJECTS')">
+            <img src="c:\Users\bless lamoste\OneDrive\Pictures\LAMOSTE BSIIT-2C INFOGRAPHICS.png" alt="Project 3" class="project-image">
+            <h2>Ancient Egyptian Civilization Infographic</h2>
+            <p>
+                A visually engaging guide to ancient Egypt, showcasing its mummification practices, medicine, engineering feats, and architectural marvels.
+            </p>
+        </div>
+
+        <div class="project-card" onclick="showDetails('Project 4')">
+            <img src="c:\Users\bless lamoste\OneDrive\Pictures\BSIT-2C-TAYLOR SWIFTERAS TOUR.jpg" alt="Project 4" class="project-image">
+            <h2>Taylor Swift: The Eras Tour Concert Poster</h2>
+            <p>
+                A promotional poster showcasing event details like date, time, and location for Taylor Swift's concert.
+            </p>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+            <a href="mailto:blesslamoste@gmail.com" target="_blank" title="Email Me">
+                <img src="https://static.vecteezy.com/system/resources/previews/014/440/919/original/email-icon-design-in-blue-circle-png.png" alt="Email Icon" class="contact-icon">
+            </a>
+            <a href="https://facebook.com/Bles Plaña Lamoste " target="_blank" title="LinkedIn Profile">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="LinkedIn Icon" class="contact-icon">
+            </a>
+            <a href="https://www.instagram.com/Bles Plaña Lamoste /" target="_blank" title="LinkedIn Profile">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="LinkedIn Icon" class="contact-icon">
+            </a>
+            <a href="https://github.com/bL12345670" target="_blank" title="GitHub Profile">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub Icon" class="contact-icon">
+            </a>
+            <a href="tel:+364541416" title="Call Me">
+                <img src="https://static.vecteezy.com/system/resources/previews/014/441/078/original/phone-call-icon-design-in-blue-circle-png.png" alt="Phone Icon" class="contact-icon">
+            </a>
+        </div>
+
+        <h4><br>MESSAGE ME IF YOU HAVE AN INQUIRY</h4>
+        <form id="contact-form" action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+        <p id="form-status" class="form-status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bless Lamoste. All Rights Reserved.</p>
+    </footer>
+
+    <script src="ScriptLamoste.js"></script>
+</body>
+</html>
